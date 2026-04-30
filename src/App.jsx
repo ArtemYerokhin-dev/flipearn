@@ -11,8 +11,8 @@ import MyOrders from "./pages/MyOrders.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Chatbox from './components/Chatbox.jsx';
 import {Toaster} from 'react-hot-toast'
-import Layout from './pages/Admin/Layout.jsx';
-import Dashboard from './pages/Admin/Dashboard.jsx';
+import Layout from './pages/admin/Layout.jsx';
+import Dashboard from './pages/admin/Dashboard.jsx';
 import AllListings from './pages/admin/AllListings';
 import CredentialChange from './pages/admin/CredentialChange';
 import CredentialVerify from './pages/admin/CredentialVerify';
@@ -35,7 +35,7 @@ const App = () => {
         <Route path="/my-orders" element={<MyOrders />} />
         <Route path="/create-listing" element={<ManageListing />} />
         <Route path="/loading" element={<Loading />} />
-        <Route path='/Admin' element={<Layout />}>
+        <Route path='/admin' element={<Layout />}>
           <Route index element={<Dashboard/>}/>
           <Route path='verify-credentials' element={<CredentialVerify/>}/>
           <Route path='change-credentials' element={<CredentialChange/>}/>
